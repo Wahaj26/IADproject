@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Login</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Precise Contact Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates, 
+ Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+
+	<!--// Meta Tags -->
+	<!-- Stylesheet -->
+	<!--// Stylesheet -->
+	<!--fonts-->
+	<link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+	<!--//fonts-->
+</head>
+<app-navbar></app-navbar>
+
+
+<body>
+	<!--background-->
+	<!-- Contact form -->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="contact-main-w3-agile">
+		<div class="top-section-wthree">
+			<h2 class="sub-title">SIGN IN</h2>
+		</div>
+		<div class="form-agileits-w3layouts">
+			<form [formGroup]="forms" ngNativeValidate>
+
+				<div class="form-w3layouts-fields">
+					<input formControlName="userName" type="text" id="userName" class="form-control" placeholder="Username" autofocus required>
+					<!-- <div *ngIf="userName.invalid && userName.touched" class="alert alert-danger">
+						<div *ngIf="userName.errors.required">Username Required</div>
+						<div *ngIf="userName.errors.invalidLogin"> Invalid Username</div>
+					</div> -->
+					<span></span>
+				</div>
+
+				<div class="form-w3layouts-fields">
+					<input formControlName="password" type="text" id="password" class="form-control" placeholder="Password" autofocus required>
+					<!-- <div *ngIf="password.invalid && password.touched" class="alert alert-danger">
+						<div *ngIf="password.errors.required">Password Required</div>
+						
+					</div> -->
+					<div id="inpass" class="alert alert-danger"></div>
+					<span></span>
+				</div>
+				<input type="submit" value="SIGN IN" [disabled]="forms.invalid" (click)="Login()">
+			</form>
+			<button class="newbtn" [routerLink]="['/signup']"> SIGN UP </button>
+		</div>
+		<!-- // Contact form -->
+	</div>
+	<div class="clear"></div>
+	<div class="copy-right-agileinfo">
+		<p>© 2018 All Rights Reserved | Design by
+			<a href="https://www.facebook.com/osama.ilyas.54">Osama Ilyas</a>
+		</p>
+	</div>
+	<!--//background-->
+</body>
+
+</html>y

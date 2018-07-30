@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm  fixed-top">
+
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar = !toggleNavbar">
+    <span class="navbar-toggler-icon"> </span>
+  </button>
+
+  <div class="collapse navbar-collapse" [ngbCollapse]="!toggleNavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">
+          <i class="fa fa-home" style="font-size:48px;color:rgb(221, 221, 240)"></i>Task Manager
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right gape">
+      <li>
+        <a class="anc" routerLink="/signin" (click)="Logout()">
+          <i class="fas fa-sign-out-alt"></i>
+          Logout</a>
+      </li>
+
+
+    </ul>
+  </div>
+
+</nav>

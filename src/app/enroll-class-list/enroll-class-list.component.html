@@ -1,0 +1,247 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AdminLTE 2 | Dashboard</title>
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.7 -->
+	<link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
+
+	<link rel="stylesheet" href="assets/dist/css/skins/_all-skins.min.css">
+
+	<!-- jvectormap -->
+	<link rel="stylesheet" href="assets/bower_components/jvectormap/jquery-jvectormap.css">
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<!-- Daterange picker -->
+	<link rel="stylesheet" href="assets/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+	<!-- bootstrap wysihtml5 - text editor -->
+	<link rel="stylesheet" href="assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<app-dashboard></app-dashboard>
+		<div class="content-wrapper">
+
+			<div class="box box-primary"> </div>
+
+			<section class="col-lg-12 connectedSortable">
+
+				<div class="limiter">
+					<div class="container-table100">
+						<div class="wrap-table100">
+							<div class="table">
+
+								<div class="row header">
+									<div class="cell">
+										Project Name
+									</div>
+									<div class="cell">
+										Project ID
+									</div>
+									<div class="cell">
+										Owner ID
+									</div>
+								</div>
+
+								<div class="row" *ngFor="let project of projects">
+									<div class="cell" data-title="Full Name">
+										{{project.proj_name}}
+									</div>
+									<div class="cell" data-title="Age">
+										{{project.proj_id}}
+									</div>
+									<div class="cell" data-title="Job Title">
+										{{project.owner_id}}
+									</div>
+									<div class="cell">
+										<a class="btn pri" style=" background: #5a5;" (click)="myenrollprojects(project.proj_id)"> View Tasks</a>
+									</div>
+
+								</div>
+
+
+
+							</div>
+							<a class="backBtn pri ico" onclick="window.history.go(-1);">Back </a>
+						</div>
+					</div>
+				</div>
+
+
+
+			</section>
+		</div>
+
+	</div>
+
+
+	<div class="control-sidebar-bg"></div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html lang="en">
+<head>
+	<title>List of Own CLass</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
+
+						<div class="row header">
+							<div class="cell">
+								Full Name
+							</div>
+							<div class="cell">
+								Age
+							</div>
+							<div class="cell">
+								Job Title
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Vincent Williamson
+							</div>
+							<div class="cell" data-title="Age">
+								31
+							</div>
+							<div class="cell" data-title="Job Title">
+								iOS Developer
+							</div>
+							
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Joseph Smith
+							</div>
+							<div class="cell" data-title="Age">
+								27
+							</div>
+							<div class="cell" data-title="Job Title">
+								Project Manager
+							</div>
+							
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Justin Black
+							</div>
+							<div class="cell" data-title="Age">
+								26
+							</div>
+							<div class="cell" data-title="Job Title">
+								Front-End Developer
+							</div>
+							
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Sean Guzman
+							</div>
+							<div class="cell" data-title="Age">
+								25
+							</div>
+							<div class="cell" data-title="Job Title">
+								Web Designer
+							</div>
+							
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Keith Carter
+							</div>
+							<div class="cell" data-title="Age">
+								20
+							</div>
+							<div class="cell" data-title="Job Title">
+								Graphic Designer
+							</div>
+							
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Austin Medina
+							</div>
+							<div class="cell" data-title="Age">
+								32
+							</div>
+							<div class="cell" data-title="Job Title">
+								Photographer
+							</div>
+							
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Vincent Williamson
+							</div>
+							<div class="cell" data-title="Age">
+								31
+							</div>
+							<div class="cell" data-title="Job Title">
+								iOS Developer
+							</div>
+							
+						</div>
+
+						
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html> -->

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Create an Account</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Precise Contact Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates, 
+ Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+
+	<!--// Meta Tags -->
+	<!-- Stylesheet -->
+	<!--// Stylesheet -->
+	<!--fonts-->
+	<link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+	<!--//fonts-->
+</head>
+<app-navbar></app-navbar>
+
+<body>
+	<!--background-->
+	<!-- Contact form -->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="contact-main-w3-agile">
+		<div class="top-section-wthree">
+			<h2 class="sub-title">SIGNUP</h2>
+		</div>
+		<div class="form-agileits-w3layouts">
+			<form [formGroup]="forms" ngNativeValidate>
+				<div class="form-w3layouts-fields">
+					<input formControlName="name" type="text" name="Name" placeholder="Name" required="" />
+				</div>
+				<div class="form-w3layouts-fields">
+					<input formControlName="email" type="email" name="Email" placeholder="Email" required="" />
+				</div>
+
+				<div class="form-w3layouts-fields">
+					<input formControlName="userName" type="text" name="userName" placeholder="UserName" required="" />
+				</div>
+
+				<div class="form-w3layouts-fields">
+					<input formControlName="designation" type="text" name="Designation" placeholder="Designation" required="" />
+				</div>
+				<div class="form-w3layouts-fields">
+					<input class="passwordClass" formControlName="password" type="password" name="password" placeholder="Password" required=""
+					/>
+				</div>
+				<div id="inpass" class="alert alert-danger"></div>
+				<input type="submit" value="SIGN UP" (click)="userCreate()" />
+			</form>
+			<button class="newbtn" [routerLink]="['/signin']"> SIGN IN </button>
+		</div>
+		<!-- // Contact form -->
+	</div>
+	<div class="clear"></div>
+	<div class="copy-right-agileinfo">
+		<p>© 2018 All Rights Reserved | Design by
+			<a href="https://www.facebook.com/osama.ilyas.54">Osama Ilyas</a>
+		</p>
+	</div>
+	<!--//background-->
+</body>
+
+</html>

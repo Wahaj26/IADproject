@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Admin Task panel</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
+
+  <link rel="stylesheet" href="assets/dist/css/skins/_all-skins.min.css">
+
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="assets/bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="assets/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+  <app-dashboard></app-dashboard>
+  <div class="content-wrapper">
+
+    <div class="box box-primary"> </div>
+
+    <section class="col-lg-12 connectedSortable">
+
+      <div class="limiter">
+
+        <div class="container-table100">
+          <div class="wrap-table100">
+
+            <div class="table">
+
+              <div class="row header">
+                <div class="cell">
+                  Task
+                </div>
+                <div class="cell">
+                  Start date
+                </div>
+                <div class="cell">
+                  Deadline
+                </div>
+                <div class="cell">
+                  Status
+                </div>
+                <div class="cell">
+
+                </div>
+                <div class="cell">
+
+                </div>
+              </div>
+
+              <div class="row" *ngFor="let task of tasks">
+                <div class="cell" data-title="Full Name">
+                  {{ task.task}}
+                </div>
+                <div class="cell" data-title="Age">
+
+                  {{ task.createdAt | date}}
+                </div>
+                <div class="cell" data-title="Job Title">
+                  {{task.deadline | date}}
+                </div>
+                <div class="cell" data-title="Job Title">
+                  {{task.status}}
+                </div>
+                <div class="cell">
+                  <a class="btn pri ico" style=" background:#d33" (click)="deleteTask(task.proj_id,task.emp_id,task.id)">Delete Task</a>
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <a class="backBtn pri ico" onclick="window.history.go(-1);">Back </a>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+    </section>
+  </div>
+
+</body>
+
+</html>

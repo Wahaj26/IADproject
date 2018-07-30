@@ -1,0 +1,90 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
+
+  <link rel="stylesheet" href="assets/dist/css/skins/_all-skins.min.css">
+
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="assets/bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="assets/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+
+<div class="hold-transition skin-blue sidebar-mini">
+  <br>
+  <br>
+  <br>
+
+  <app-navbar></app-navbar>
+  <aside class="main-sidebar">
+
+    <section class="sidebar">
+
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="assets/img/User.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p id="uname"></p>
+          <a>
+            <i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="treeview">
+          <a routerLink="/enroll">
+            <i class="fa fa-edit"></i>
+            <a routerLink="/enroll">Enroll in new Project</a>
+            <!-- <span>Enroll in new class</span> -->
+            <span class="pull-right-container">
+            </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a routerLink="/ownClass">
+            <i class="fa fa-edit"></i>
+            <a routerLink="/ownClass">Create Own Project</a>
+            <!-- <span>Create Own Class</span> -->
+          </a>
+
+        </li>
+
+        <li class="treeview">
+          <a routerLink="/ownClassList">
+            <i class="fa fa-laptop"></i>
+            <a routerLink="/ownClassList">See Own Project</a>
+            <!-- <span>See Own classes</span> -->
+          </a>
+
+        </li>
+        <li class="treeview">
+          <a routerLink="/enrollClassList">
+            <i class="fa fa-laptop"></i>
+            <a routerLink="/enrollClassList">See Enrolled Project</a>
+            <!-- <span>See Enrolled classes</span> -->
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+  </aside>
+
+</div>
